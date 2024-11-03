@@ -324,6 +324,8 @@ bool Socket::RecvLooped(unsigned char* buf, int len)
 
 		if(x <= 0)
 			break;
+
+		start = GetTime();
 	}
 
 	if(x < 0)
